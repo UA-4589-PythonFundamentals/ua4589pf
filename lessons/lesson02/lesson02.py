@@ -236,4 +236,3 @@ for i in str(l):
 
 for i in l:
     print(f"{i}", end="_")
-
