@@ -27,13 +27,13 @@ clock = pygame.time.Clock()
 
 while run:
     pygame.time.delay(100)
-    
+
     for event in pygame.event.get(): 
         if event.type == pygame.QUIT:
             run = False
 
     keys = pygame.key.get_pressed()
-    
+
     if keys[pygame.K_LEFT]:
         COORD_X = COORD_X-DELTA_STEP
     if keys[pygame.K_RIGHT]:
@@ -48,13 +48,13 @@ while run:
         COORD_X = 0
     if COORD_X + WIDTH_RECTANGLE > WIDTH_DISPLAY:
         COORD_X = WIDTH_DISPLAY - WIDTH_RECTANGLE
-    
+
     if COORD_Y < 0:
         COORD_Y = 0
     if COORD_Y + HEIGHT_RECTANGLE > HEIGHT_DISPLAY:
         COORD_Y = HEIGHT_DISPLAY - HEIGHT_RECTANGLE
 #changes end
-        
+
     gameDisplay.fill(BLACK_COLOR) 
 
     pygame.draw.rect(gameDisplay, RED_COLOR, [COORD_X, 
@@ -63,5 +63,3 @@ while run:
                                               HEIGHT_RECTANGLE])
     pygame.display.update()
     clock.tick(FPS)
-    
-
