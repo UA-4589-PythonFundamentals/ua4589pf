@@ -1,11 +1,9 @@
-def max_of_two(a, b):
+def func(num1, num2):
     """
-    Функція повертає найбільше з двох чисал.
+    Functiun return the larger of two numbers.
     """
-    return a if a > b else b
+    print(max(num1, num2))
 
-if __name__ == "__main__":
-    num1 = (input("Введите первое число: "))
-    num2 = (input("Введите второе число: "))
-
-    print("Большее число:", max_of_two(num1, num2))
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
+func(num1, num2)

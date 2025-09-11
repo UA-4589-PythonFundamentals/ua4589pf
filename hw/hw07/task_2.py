@@ -1,4 +1,3 @@
-import math
 
 def area_rectangle(length, width):
     return length * width
@@ -7,30 +6,19 @@ def area_triangle(base, height):
     return 0.5 * base * height
 
 def area_circle(radius):
-    return math.pi * radius ** 2
+    return 3.14 * radius ** 2
 
+shape = input("Choose area of shape (rectangle, triangle, circle): ")
 
-if __name__ == "__main__":
-    print("Що ви хочете обчислити?")
-    print("1 - Площа прямокутника")
-    print("2 - Площа трикутника")
-    print("3 - Площа кола")
+if shape == "rectangle":
+    length = float(input("Enter length: "))
+    width = float(input("Enter width: "))
+    print(area_rectangle(length, width))
+elif shape == "triangle":
+    base = float(input("Enter base: "))
+    height = float(input("Enter height: "))
+    print(area_triangle(base, height))
+elif shape == "circle":
+    radius = float(input("Enter radius: "))
+    print(area_circle(radius))
 
-    choice = input("Введіть номер вибору: ")
-
-    if choice == "1":
-        l = float(input("Введіть довжину: "))
-        w = float(input("Введіть ширину: "))
-        print("Площа прямокутника:", area_rectangle(l, w))
-
-    elif choice == "2":
-        b = float(input("Введіть основу: "))
-        h = float(input("Введіть висоту: "))
-        print("Площа трикутника:", area_triangle(b, h))
-
-    elif choice == "3":
-        r = float(input("Введіть радіус: "))
-        print("Площа кола:", area_circle(r))
-
-    else:
-        print("Некоректний вибір!")

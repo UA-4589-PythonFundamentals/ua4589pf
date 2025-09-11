@@ -1,8 +1,13 @@
-def number_of_characters(word):
-    num_of_char = dict()
+def char_count(word):
+    result = {}
     for i in word:
-        num_of_char[i] = num_of_char.get(i, 0) + 1
-    return num_of_char
+        if i in result:
+            result[i] += 1
+        else:
+            result[i] = 1
+    return result
 
-word = input("Enter a word: ")
-print(number_of_characters(word))
+input_word = input("Enter a word: ")
+print(char_count(input_word))
+
+
