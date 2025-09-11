@@ -1,10 +1,8 @@
-def char_count(s):
-    result = {}
-    for char in s:
-        result[char] = result.get(char, 0) + 1
-    return result
+def number_of_characters(word):
+    num_of_char = dict()
+    for i in word:
+        num_of_char[i] = num_of_char.get(i, 0) + 1
+    return num_of_char
 
-
-if __name__ == "__main__":
-    text = input("Введіть рядок: ")
-    print(char_count(text))
+word = input("Enter a word: ")
+print(number_of_characters(word))
