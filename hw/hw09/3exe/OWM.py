@@ -11,8 +11,6 @@ def get_weather(city):
     try:
         observation = mgr.weather_at_place(city)
         w = observation.weather
-
-        # Формируем строку с данными о погоде
         weather_info = (
             f"Status: {w.detailed_status}\n"
             f"Wind: {w.wind()}\n"
