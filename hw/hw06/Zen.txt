@@ -1,8 +1,8 @@
 Beautiful is better than ugly.
-Anna Donchenko tedbeeth
+Explicit is better than implicit.
 Bohdan Horbenko napadayte Hello!
-Borovikov Denys fagrt.
-Iryna Mazurenko phenomenal_capybara_33309
+Complex is better than complicated.
+Simple is better than complex.
 Sparse is better than dense.
 Readability counts
 Nazar Artysh megapapik
@@ -15,6 +15,6 @@ Although that way may not be obvious at first unless you're Dutch.
 Now is better than never.
 Женя Таран evgentaran
 If the implementation is hard to explain, it's a bad idea.
-Сапелюк Ірина alllukaaa
+If the implementation is easy to explain, it may be a good idea.
 Черленюк Олексій alexfenestro5707
 Beautiful is better than ugly.
