@@ -5,7 +5,7 @@ Complex is better than complicated.
 Simple is better than complex.
 Sparse is better than dense.
 Readability counts
-Nazar Artysh megapapik
+Special cases aren't special enough to break the rules.
 Oksana Pokhyvka ksu_pkhvk
 Oleh Ostapiak ostapiak
 Unless explicitly silenced.
