@@ -18,5 +18,5 @@ def circle_area(radius: int):
     """
     Returns the area of circle.
     """
-    area = pi * radius ** 2
+    area = pi * pow(radius, 2)
     return area
